@@ -1,4 +1,8 @@
 /*===== MENU SHOW =====*/ 
+  const box = document.querySelector(".box");
+      setInterval(() => {
+        box.classList.toggle("move");
+      }, 2000);
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId)
