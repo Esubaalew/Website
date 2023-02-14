@@ -25,7 +25,19 @@
   --z-back: -10;
   --z-fixed: 100;
 }
+.box {
+  width: 100px;
+  height: 30px;
+  background: linear-gradient(90deg, green, yellow, red);
+  position: relative;
+  left: 0;
+  text-align: center;
+  transition: all 2s ease-in-out;
+}
 
+.box.move {
+  left: 200px;
+}
 @media screen and (min-width: 968px) {
   :root {
     --big-font-size: 3.5rem;
