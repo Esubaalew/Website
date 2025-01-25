@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Esubalew Chekol - Fullstack Developer & Python Specialist</title>
     <meta name="description" content="Esubalew Chekol is a skilled full-stack developer specializing in Python, JavaScript, and Telegram bots. Explore my portfolio and projects.">
-    <meta name="keywords" content="Esubalew Chekol, Fullstack Developer, Python, JavaScript, Telegram Bots, Django, Flask, FastAPI, React, Portfolio">
+    <meta name="keywords" content="Esubalew Chekol, Fullstack Developer, Python, JavaScript, Telegram Bots, Django, Flask, FastAPI, React, Portfolio, Ethiopian Developer">
     <meta name="author" content="Esubalew Chekol">
     <meta property="og:title" content="Esubalew Chekol - Fullstack Developer & Python Specialist">
     <meta property="og:description" content="Esubalew Chekol is a skilled full-stack developer specializing in Python, JavaScript, and Telegram bots. Explore my portfolio and projects.">
@@ -18,395 +18,114 @@
     <link rel="canonical" href="https://esube.tech">
     <link rel="sitemap" type="application/xml" href="/sitemap.xml">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #3498db;
-            --accent-color: #e74c3c;
-            --light-color: #ecf0f1;
-            --dark-color: #34495e;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', sans-serif;
-        }
-
-        body {
-            line-height: 1.6;
-            color: var(--dark-color);
-            background-color: var(--light-color);
-        }
-
-        /* Header Styles */
-        header {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 4rem 2rem;
-            text-align: center;
-        }
-
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin: 1rem auto;
-            border: 4px solid var(--secondary-color);
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            color: var(--light-color);
-        }
-
-        nav {
-            background-color: var(--secondary-color);
-            padding: 1rem;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1.5rem;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: var(--accent-color);
-        }
-
-        /* Section Styles */
-        section {
-            padding: 4rem 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 3rem;
-            color: var(--secondary-color);
-            font-size: 2rem;
-            position: relative;
-        }
-
-        .section-title::after {
-            content: '';
-            width: 60px;
-            height: 3px;
-            background-color: var(--accent-color);
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        /* About Section */
-        .about-content {
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .about-content p {
-            margin-bottom: 1.5rem;
-            font-size: 1.1rem;
-            line-height: 1.8;
-        }
-
-        /* Skills Grid */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-        }
-
-        .skill-card {
-            background-color: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            text-align: center;
-            transition: transform 0.3s, box-shadow 0.3s;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-
-        .skill-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-        }
-
-        .skill-card h3 {
-            color: var(--secondary-color);
-            margin-bottom: 1rem;
-        }
-
-        /* Projects Grid */
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .project-card {
-            background-color: white;
-            border-radius: 8px;
-            padding: 1.5rem;
-            transition: box-shadow 0.3s;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-
-        .project-card:hover {
-            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-        }
-
-        .project-card h3 {
-            color: var(--secondary-color);
-            margin-bottom: 1rem;
-        }
-
-        .project-card a {
-            color: var(--accent-color);
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .project-card a:hover {
-            text-decoration: underline;
-        }
-
-        .project-card p {
-            font-size: 0.9rem;
-            color: var(--dark-color);
-            margin-bottom: 1rem;
-        }
-
-        /* Contact Section */
-        .contact-info {
-            text-align: center;
-            margin-top: 2rem;
-        }
-
-        .contact-info p {
-            font-size: 1.1rem;
-            margin-bottom: 1rem;
-        }
-
-        .social-links {
-            margin-top: 1rem;
-        }
-
-        .social-links a {
-            color: var(--primary-color);
-            margin: 0 1rem;
-            font-size: 1.5rem;
-            transition: color 0.3s;
-        }
-
-        .social-links a:hover {
-            color: var(--accent-color);
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2rem;
-            }
-
-            header p {
-                font-size: 1rem;
-            }
-
-            nav a {
-                margin: 0 1rem;
-            }
-
-            .section-title {
-                font-size: 1.8rem;
-            }
-
-            .about-content p {
-                font-size: 1rem;
-            }
-
-            .skills-grid {
-                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            }
-
-            .project-card h3 {
-                font-size: 1.2rem;
-            }
-
-            .project-card p {
-                font-size: 0.8rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            header {
-                padding: 2rem 1rem;
-            }
-
-            .profile-img {
-                width: 120px;
-                height: 120px;
-            }
-
-            header h1 {
-                font-size: 1.8rem;
-            }
-
-            header p {
-                font-size: 0.9rem;
-            }
-
-            nav {
-                padding: 0.5rem;
-            }
-
-            nav a {
-                margin: 0 0.5rem;
-                font-size: 0.9rem;
-            }
-
-            section {
-                padding: 2rem 1rem;
-            }
-
-            .section-title {
-                font-size: 1.5rem;
-            }
-
-            .about-content p {
-                font-size: 0.9rem;
-            }
-
-            .skills-grid {
-                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-            }
-
-            .project-card h3 {
-                font-size: 1rem;
-            }
-
-            .project-card p {
-                font-size: 0.7rem;
-            }
-
-            .contact-info p {
-                font-size: 1rem;
-            }
-
-            .social-links a {
-                font-size: 1.2rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <img src="https://avatars.githubusercontent.com/u/106541640?v=4" alt="Esubalew Chekol - Fullstack Developer" class="profile-img">
-        <h1>Esubalew Chekol</h1>
-        <p>Fullstack Developer & Python Specialist</p>
+        <div class="container header-content">
+            <div class="profile-info">
+                <h1>Esubalew Chekol</h1>
+                <p>Fullstack Developer & Python Specialist</p>
+            </div>
+            <img src="https://avatars.githubusercontent.com/u/106541640?v=4" alt="Esubalew Chekol - Fullstack Developer" class="profile-img">
+        </div>
+        <div class="header-bg"></div>
     </header>
 
     <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="theme-toggle" aria-label="Toggle dark/light mode">
+            <i class="fas fa-moon"></i>
+        </button>
     </nav>
 
-    <section id="about">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-content">
-            <p>
-                I am Esubalew Chekol, a skilled and passionate full-stack developer with over three years of hands-on experience creating Telegram bots, web applications, and mini-apps. My expertise lies in Python and JavaScript-based frameworks, enabling me to deliver high-quality, user-friendly solutions tailored to your needs.
-            </p>
-            <p>
-                <strong>How I Bring Your Ideas to Life:</strong> I take a systematic approach to ensure your project’s success. From backend development using Python (Django, Flask, FastAPI) or Node.js to frontend design with React, Next.js, or Bootstrap, I ensure every aspect aligns with your vision.
-            </p>
+    <main>
+        <section id="about" class="fade-in-up">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            I am Esubalew Chekol, a skilled and passionate full-stack developer with over three years of hands-on experience creating Telegram bots, web applications, and mini-apps. My expertise lies in Python and JavaScript-based frameworks, enabling me to deliver high-quality, user-friendly solutions tailored to your needs.
+                        </p>
+                        <p>
+                            <strong>How I Bring Your Ideas to Life:</strong> I take a systematic approach to ensure your project's success. From backend development using Python (Django, Flask, FastAPI) or Node.js to frontend design with React, Next.js, or Bootstrap, I ensure every aspect aligns with your vision.
+                        </p>
+                    </div>
+                    <div class="about-image">
+                        <img src="/ethiopian-artwork.jpg" alt="Ethiopian-inspired artwork representing technology and culture" class="artwork">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="fade-in-up">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fab fa-python"></i>
+                        <h3>Python</h3>
+                        <p>Django, Flask, FastAPI, Web Scraping</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-js"></i>
+                        <h3>JavaScript</h3>
+                        <p>React, Next.js, Node.js, Telegraf</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-database"></i>
+                        <h3>Databases</h3>
+                        <p>PostgreSQL, MongoDB, Redis</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-server"></i>
+                        <h3>DevOps</h3>
+                        <p>Docker, AWS, CI/CD</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="fade-in-up">
+            <div class="container">
+                <h2 class="section-title">GitHub Repositories</h2>
+                <div class="projects-grid" id="repos-container"></div>
+                <div class="pagination">
+                    <button id="prev-page" disabled>Previous</button>
+                    <span id="page-info"></span>
+                    <button id="next-page">Next</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="fade-in-up">
+            <div class="container">
+                <h2 class="section-title">Contact Me</h2>
+                <div class="contact-info">
+                    <p>📧 esubalewchekol6@gmail.com</p>
+                    <div class="social-links">
+                        <a href="https://github.com/esubaalew" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/esubaalew" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://esube.tech" target="_blank" rel="noopener noreferrer" aria-label="Personal Website"><i class="fas fa-globe"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Esubalew Chekol. All rights reserved.</p>
         </div>
-    </section>
+    </footer>
 
-    <section id="skills">
-        <h2 class="section-title">Technical Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-card">
-                <h3>Python</h3>
-                <p>Django, Flask, FastAPI, Web Scraping</p>
-            </div>
-            <div class="skill-card">
-                <h3>JavaScript</h3>
-                <p>React, Next.js, Node.js, Telegraf</p>
-            </div>
-            <div class="skill-card">
-                <h3>Databases</h3>
-                <p>PostgreSQL, MongoDB, Redis</p>
-            </div>
-            <div class="skill-card">
-                <h3>DevOps</h3>
-                <p>Docker, AWS, CI/CD</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects">
-        <h2 class="section-title">GitHub Repositories</h2>
-        <div class="projects-grid" id="repos-container">
-            <!-- GitHub Repos will be dynamically loaded here -->
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2 class="section-title">Contact Me</h2>
-        <div class="contact-info">
-            <p>📧 esubalewchekol6@gmail.com</p>
-            <div class="social-links">
-                <a href="https://github.com/esubaalew" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/esubaalew" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://esube.tech" target="_blank" aria-label="Personal Website"><i class="fas fa-globe"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <script>
-        // Fetch GitHub Repositories
-        const reposContainer = document.getElementById('repos-container');
-        const username = 'esubaalew'; // Replace with your GitHub username
-
-        async function fetchRepos() {
-            try {
-                const response = await fetch(`https://api.github.com/users/${username}/repos`);
-                const repos = await response.json();
-
-                repos.forEach(repo => {
-                    const repoCard = document.createElement('div');
-                    repoCard.className = 'project-card';
-
-                    repoCard.innerHTML = `
-                        <h3>${repo.name}</h3>
-                        <p>${repo.description || 'No description available.'}</p>
-                        <a href="${repo.html_url}" target="_blank">View on GitHub →</a>
-                    `;
-
-                    reposContainer.appendChild(repoCard);
-                });
-            } catch (error) {
-                console.error('Error fetching GitHub repositories:', error);
-                reposContainer.innerHTML = '<p>Unable to load repositories. Please try again later.</p>';
-            }
-        }
-
-        fetchRepos();
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
+
